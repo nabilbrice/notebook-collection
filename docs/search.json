@@ -11,13 +11,13 @@
     "href": "index.html",
     "title": "Navigation",
     "section": "",
-    "text": "This is a Quarto website containing links to the notebooks.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is a Quarto website containing links to my pre-computed Jupyter notebooks.\nMore information about Quarto and its websites publishing capabilities is available at https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This site contains some of the research notebooks."
+    "text": "This site contains some of my current research notebooks."
   }
 ]

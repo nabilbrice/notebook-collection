@@ -340,7 +340,7 @@ window.Quarto = {
 \]</span> where the curly symbols denote the detector-frame Stokes parameters.</p>
 <p>From <code>sinar.entities.harmonics</code>, the utility function <code>cross_and_project</code> provides the value <span class="math inline">\(\vec{e}_1 \cdot \vec{x}\)</span> and <span class="math inline">\(\vec{e}_2 \cdot \vec{x}\)</span>.</p>
 <p>Currently, the calculation in <code>view_projection</code> is done for 100% purely linearly polarized light with Stokes parameters <span class="math inline">\(I = 0, \ Q=1, \ U=0, \ V=0\)</span>, which is equivalent to 100% locally purely X-mode polarized light. This showcases the largest effects of the varying magnetic field topology on the polarization state.</p>
-<div id="cell-10" class="cell" data-execution_count="14">
+<div id="cell-10" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sinar.entities.harmonics <span class="im">import</span> cross_and_project</span>
@@ -397,7 +397,7 @@ window.Quarto = {
 <span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>    ax.axis(<span class="st">'equal'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-11" class="cell" data-execution_count="26">
+<div id="cell-11" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_frame(fig, orient <span class="op">=</span> rotation(theta<span class="op">=</span>jnp.pi<span class="op">/</span><span class="dv">4</span>, phi<span class="op">=</span><span class="fl">0.0</span>), adiabatic_radius <span class="op">=</span> <span class="fl">1.0</span>):</span>
@@ -442,7 +442,7 @@ window.Quarto = {
 <p>The differences of the multi-polar magnetic fields are more pronounced closer to the equator and in the southern hemisphere when compared with the pure dipole magnetic field.</p>
 <p>The adiabatic radius, where the measurement of the polarization state of the light ray is taken, is an important factor in the how much the multi-polar components affect the polarization state. For an adiabatic radius farther from the surface, the higher-order components fall-off in strength compared with the dipole, which thus dominates the determination of the direction. Hence, the magnetic field topologies of interest are those in which the higher-order components at least dominate close to the surface (by a factor of several).</p>
 <p>The best probes for complex magnetic field topology are lower energy photons, which will have a smaller adiabatic radius in comparison to higher energy photons.</p>
-<div id="cell-13" class="cell" data-execution_count="35">
+<div id="cell-13" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.animation <span class="im">import</span> FuncAnimation</span>
@@ -514,7 +514,7 @@ window.Quarto = {
 <span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> HTML(anim.to_jshtml())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-14" class="cell" data-execution_count="41">
+<div id="cell-14" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>anim <span class="op">=</span> create_animation(theta<span class="op">=</span>jnp.pi<span class="op">/</span><span class="fl">4.0</span>,</span>
@@ -523,7 +523,7 @@ window.Quarto = {
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>display_animation(anim)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="41">
+<div class="cell-output cell-output-display" data-execution_count="11">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <script language="javascript">
@@ -708,36 +708,36 @@ input[type=range].anim-slider {
 </style>
 
 <div class="animation">
-  <img id="_anim_img91865f1a74814e5692174a6be4fdfc68">
+  <img id="_anim_img60595565177747ef8d9bfda683cbc59b">
   <div class="anim-controls">
-    <input id="_anim_slider91865f1a74814e5692174a6be4fdfc68" type="range" class="anim-slider" name="points" min="0" max="1" step="1" value="0" oninput="anim91865f1a74814e5692174a6be4fdfc68.set_frame(parseInt(this.value));">
+    <input id="_anim_slider60595565177747ef8d9bfda683cbc59b" type="range" class="anim-slider" name="points" min="0" max="1" step="1" value="0" oninput="anim60595565177747ef8d9bfda683cbc59b.set_frame(parseInt(this.value));">
     <div class="anim-buttons">
-      <button title="Decrease speed" aria-label="Decrease speed" onclick="anim91865f1a74814e5692174a6be4fdfc68.slower()">
+      <button title="Decrease speed" aria-label="Decrease speed" onclick="anim60595565177747ef8d9bfda683cbc59b.slower()">
           <i class="fa fa-minus"></i></button>
-      <button title="First frame" aria-label="First frame" onclick="anim91865f1a74814e5692174a6be4fdfc68.first_frame()">
+      <button title="First frame" aria-label="First frame" onclick="anim60595565177747ef8d9bfda683cbc59b.first_frame()">
         <i class="fa fa-fast-backward"></i></button>
-      <button title="Previous frame" aria-label="Previous frame" onclick="anim91865f1a74814e5692174a6be4fdfc68.previous_frame()">
+      <button title="Previous frame" aria-label="Previous frame" onclick="anim60595565177747ef8d9bfda683cbc59b.previous_frame()">
           <i class="fa fa-step-backward"></i></button>
-      <button title="Play backwards" aria-label="Play backwards" onclick="anim91865f1a74814e5692174a6be4fdfc68.reverse_animation()">
+      <button title="Play backwards" aria-label="Play backwards" onclick="anim60595565177747ef8d9bfda683cbc59b.reverse_animation()">
           <i class="fa fa-play fa-flip-horizontal"></i></button>
-      <button title="Pause" aria-label="Pause" onclick="anim91865f1a74814e5692174a6be4fdfc68.pause_animation()">
+      <button title="Pause" aria-label="Pause" onclick="anim60595565177747ef8d9bfda683cbc59b.pause_animation()">
           <i class="fa fa-pause"></i></button>
-      <button title="Play" aria-label="Play" onclick="anim91865f1a74814e5692174a6be4fdfc68.play_animation()">
+      <button title="Play" aria-label="Play" onclick="anim60595565177747ef8d9bfda683cbc59b.play_animation()">
           <i class="fa fa-play"></i></button>
-      <button title="Next frame" aria-label="Next frame" onclick="anim91865f1a74814e5692174a6be4fdfc68.next_frame()">
+      <button title="Next frame" aria-label="Next frame" onclick="anim60595565177747ef8d9bfda683cbc59b.next_frame()">
           <i class="fa fa-step-forward"></i></button>
-      <button title="Last frame" aria-label="Last frame" onclick="anim91865f1a74814e5692174a6be4fdfc68.last_frame()">
+      <button title="Last frame" aria-label="Last frame" onclick="anim60595565177747ef8d9bfda683cbc59b.last_frame()">
           <i class="fa fa-fast-forward"></i></button>
-      <button title="Increase speed" aria-label="Increase speed" onclick="anim91865f1a74814e5692174a6be4fdfc68.faster()">
+      <button title="Increase speed" aria-label="Increase speed" onclick="anim60595565177747ef8d9bfda683cbc59b.faster()">
           <i class="fa fa-plus"></i></button>
     </div>
-    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_select91865f1a74814e5692174a6be4fdfc68" class="anim-state">
-      <input type="radio" name="state" value="once" id="_anim_radio1_91865f1a74814e5692174a6be4fdfc68">
-      <label for="_anim_radio1_91865f1a74814e5692174a6be4fdfc68">Once</label>
-      <input type="radio" name="state" value="loop" id="_anim_radio2_91865f1a74814e5692174a6be4fdfc68" checked="">
-      <label for="_anim_radio2_91865f1a74814e5692174a6be4fdfc68">Loop</label>
-      <input type="radio" name="state" value="reflect" id="_anim_radio3_91865f1a74814e5692174a6be4fdfc68">
-      <label for="_anim_radio3_91865f1a74814e5692174a6be4fdfc68">Reflect</label>
+    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_select60595565177747ef8d9bfda683cbc59b" class="anim-state">
+      <input type="radio" name="state" value="once" id="_anim_radio1_60595565177747ef8d9bfda683cbc59b">
+      <label for="_anim_radio1_60595565177747ef8d9bfda683cbc59b">Once</label>
+      <input type="radio" name="state" value="loop" id="_anim_radio2_60595565177747ef8d9bfda683cbc59b" checked="">
+      <label for="_anim_radio2_60595565177747ef8d9bfda683cbc59b">Loop</label>
+      <input type="radio" name="state" value="reflect" id="_anim_radio3_60595565177747ef8d9bfda683cbc59b">
+      <label for="_anim_radio3_60595565177747ef8d9bfda683cbc59b">Reflect</label>
     </form>
   </div>
 </div>
@@ -747,9 +747,9 @@ input[type=range].anim-slider {
   /* Instantiate the Animation class. */
   /* The IDs given should match those used in the template above. */
   (function() {
-    var img_id = "_anim_img91865f1a74814e5692174a6be4fdfc68";
-    var slider_id = "_anim_slider91865f1a74814e5692174a6be4fdfc68";
-    var loop_select_id = "_anim_loop_select91865f1a74814e5692174a6be4fdfc68";
+    var img_id = "_anim_img60595565177747ef8d9bfda683cbc59b";
+    var slider_id = "_anim_slider60595565177747ef8d9bfda683cbc59b";
+    var loop_select_id = "_anim_loop_select60595565177747ef8d9bfda683cbc59b";
     var frames = new Array(36);
     
   frames[0] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAMgCAYAAAAz4JsCAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90\
@@ -33236,7 +33236,7 @@ RU5ErkJggg==\
     /* set a timeout to make sure all the above elements are created before
        the object is initialized. */
     setTimeout(function() {
-        anim91865f1a74814e5692174a6be4fdfc68 = new Animation(frames, img_id, slider_id, 100.0,
+        anim60595565177747ef8d9bfda683cbc59b = new Animation(frames, img_id, slider_id, 100.0,
                                  loop_select_id);
     }, 0);
   })()

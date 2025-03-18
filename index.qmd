@@ -1,0 +1,7 @@
+---
+title: "Navigation"
+---
+
+This is a Quarto website containing links to my pre-computed Jupyter notebooks.
+
+More information about Quarto and its websites publishing capabilities is available at <https://quarto.org/docs/websites>.
